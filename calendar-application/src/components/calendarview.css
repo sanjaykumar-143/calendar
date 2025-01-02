@@ -1,0 +1,108 @@
+/* Calendar View */
+.calendar-view {
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 801px; /* Increase width by 1px */
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensure padding and border don't cause overflow */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Calendar Header */
+.calendar-view h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase; /* Make the header more stylish */
+  letter-spacing: 1px; /* Add some spacing between letters */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the header */
+}
+
+/* Event List */
+.events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px; /* Set a max height for the event list */
+  overflow-y: auto; /* Enable vertical scrolling if events overflow */
+}
+
+.events li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Roboto', sans-serif; /* Change font for a more modern look */
+  font-weight: 500; /* Set medium font weight */
+  text-transform: capitalize; /* Make event names start with capital letters */
+  letter-spacing: 0.5px; /* Add slight spacing between characters */
+  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.events li:last-child {
+  border-bottom: none;
+}
+
+.events li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  color: #007bff; /* Change color on hover */
+  font-weight: bold; /* Make font bold on hover */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Add shadow to text on hover */
+}
+
+/* React Calendar Highlighted Dates */
+.react-calendar .highlighted-date {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.react-calendar .highlighted-date:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .calendar-view {
+    padding: 1rem;
+  }
+
+  .calendar-view h2 {
+    font-size: 1.5rem;
+  }
+
+  .events li {
+    font-size: 0.9rem;
+  }
+
+  .events ul {
+    max-height: 250px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-view {
+    padding: 0.75rem;
+  }
+
+  .calendar-view h2 {
+    font-size: 1.2rem;
+  }
+
+  .events li {
+    font-size: 0.85rem;
+  }
+
+  .events ul {
+    max-height: 200px; /* Further reduce height for very small screens */
+  }
+}

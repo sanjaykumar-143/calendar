@@ -1,0 +1,77 @@
+/* Company Form Styles */
+.company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.company-form input,
+.company-form textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-form input:focus,
+.company-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.company-form button {
+  background-color: var(--success-color);
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.company-form button:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .company-form {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .company-form input,
+  .company-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .company-form button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-form input,
+  .company-form textarea {
+    font-size: 0.85rem;
+  }
+
+  .company-form button {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}

@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-left: auto; /* Push buttons to the right */
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Admin Container */
+.admin-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* FileUpload and CompanyForm Styles */
+.FileUpload,
+.CompanyForm {
+  margin-bottom: 25px;
+}
+
+.FileUpload input,
+.CompanyForm input,
+.CompanyForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.FileUpload button,
+.CompanyForm button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.FileUpload button:hover,
+.CompanyForm button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .butn {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .butn button {
+    margin-right: 10px;
+  }
+
+  .admin-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .FileUpload input,
+  .CompanyForm input,
+  .CompanyForm textarea {
+    padding: 10px;
+  }
+
+  .FileUpload button,
+  .CompanyForm button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header h1 {
+    font-size: 22px;
+  }
+
+  .butn button {
+    font-size: 14px;
+  }
+}

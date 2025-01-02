@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .page-header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-header button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  .company-table th,
+  .company-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .company-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .company-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .company-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Buttons */
+  .company-table button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #0056b3;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.delete:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .company-table th,
+    .company-table td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-table th,
+    .company-table td {
+      font-size: 0.8rem;
+    }
+  
+    button {
+      font-size: 0.7rem;
+      padding: 5px 8px;
+    }
+  }
+  
